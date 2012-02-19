@@ -1,5 +1,8 @@
 $(document).ready(function() { 
 
+    //start the carousel
+    //$('.carousel').carousel();
+
     //bind to hover and click
     $('.student_in_table').live('mouseover', get_student_in_spotlight);
     $('.student_in_table').live('click', get_student_in_spotlight);
