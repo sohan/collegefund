@@ -3,9 +3,30 @@
 {% block title %}Connecting charitable alumni and corporate donors to students with loan debt{% endblock %}
 
 {% block body %}
-  <div class="hero-unit">
-    <h1>$25,000</h1>
-    <p> is the average student loan debt. </p>
-    <p><a class="btn btn-primary btn-large"> See how you can help &raquo;</a></p>
-  </div>
+  <div class="row">
+      <div class="span12">
+        <div class="row">
+          <table class="span6">
+            <tbody id="select_student_spotlight">
+            </tbody>
+          </table>
+          <div class="span6">
+            <div class="thumbnail" id="student_in_spotlight">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+  <script type="text/javascript" src="{{ STATIC_URL }}js/script.js"></script>
+  <script type="text/javascript">
+    var students = [];
+    {% for student in students %}
+      students.push({'name': "{{ student.name|safe }}",
+        'university': "{{ student.university|safe }}",
+        });
+    {% endfor %}
+  </script>
 {% endblock %}
