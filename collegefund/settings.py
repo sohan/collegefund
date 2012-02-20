@@ -157,3 +157,5 @@ LOGGING = {
     }
 }
 SITE_ID=u'4f41668e48a208011300001d'
+LOGIN_URL = '/auth/login/'
+LOGIN_REDIRECT_URL = '/accounts/profile/'

@@ -25,7 +25,7 @@
               <li><a href="#">Student Loan Debt</a></li>
             </ul>
             <ul class="nav pull-right" action="" id="nav_login">
-              <li id="login"><a href="#">Register</a></li>
+              <li id="login"><a href="/auth/login/">Login</a></li>
             </ul>
           </div><!--/.nav-collapse-->
         </div>
@@ -38,13 +38,15 @@
 
       <footer>
         {% block footer %}
-        <ul class="nav nav-pills">
-          <li><a href="#">&copy; College Fund 2012</a></li>
-          <li><a href="#">Students</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Privacy & Terms</a></li>
-          <li><a href="#">Support Us</a></li>
-        </ul>
+        <div class="row">
+          <ul class="nav nav-pills">
+            <li><a href="#">&copy; College Fund 2012</a></li>
+            <li><a href="#">Students</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Privacy & Terms</a></li>
+            <li><a href="#">Support Us</a></li>
+          </ul>
+        </div>
         {% endblock %}
       </footer>
 

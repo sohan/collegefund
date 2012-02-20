@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title%}Login{% endblock %}
+
+{% block body %}
+<div class="row">
+  <div class="">
+    <form class="well text-center" action="{% url django.contrib.auth.views.login %}" method=post>
+      {% csrf_token %}
+      <fieldset>
+        {% if form.errors %}
+        <label> Your username and password did not match. </label>
+        {% endif %}
+        {% if next %}
+          <input type="hidden" name="next" value="{{ next }}" />
+        {% endif %}
+        Email:
+        <input type="text" class="span3" placeholder="Your email address" name="username" />
+        </br>
+        Password:
+        <input type="password" class="span3" name="password" value="" />
+        <div class="form-actions">
+          <input class="btn-primary"type="submit" value="Log In" />
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
+{% endblock %}
