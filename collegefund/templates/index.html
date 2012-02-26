@@ -4,35 +4,10 @@
 
 {% block body %}
   <div class="row">
-    <div class="span12">
-      <div class="row">
-        <table class="span6">
-          <tbody id="select_student_spotlight">
-          </tbody>
-        </table>
-        <div class="span6">
-          <div class="thumbnail" id="student_in_spotlight">
-          </div>
-        </div>
-      </div>
-    </div>
+    {% include "facts_carousel.html" %}
   </div>
   <div class="row">
-  </div>
-  <div class="row">
-    <!--
-    <div id="facts_carousel" class="carousel span12">
-      <div class="carousel-inner">
-        <div class="active item">
-          <h1>$25000</h1>
-          <p> is the average student loan debt. You can help.</p>
-          <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-        </div>
-      </div>
-      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="carousel-control right" href="#myCarousel" data-slide="prev">&rsaquo;</a>
-    </div>
-    -->
+    {% include "sac_info_columns.html" %}
   </div>
 {% endblock %}
 
@@ -44,6 +19,8 @@
       students.push({'name': "{{ student.name|safe }}",
         'university': "{{ student.university|safe }}",
         });
+        //spotlight();
+        $('.carousel').carousel();
     {% endfor %}
   </script>
 {% endblock %}
