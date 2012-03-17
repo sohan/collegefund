@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block title %}ConnectForEdu | About Us{% endblock %}
+
+{% block body %}
+  <div class="row-fluid">
+    <div id="navbar" class="span2 sidebar-nav sidebar-nav-fixed">
+      <ul class="nav nav-list">
+        <li class="nav-header">About Us</li>
+        <li class="active"><a href="#mission_statement">Mission Statement</a></li>
+        <li><a href="#values">Values</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#vision">Vision</a></li>
+      </ul>
+    </div>
+    <div class="span9 span-fixed-sidebar">
+      <div class="row-fluid">
+        <div id="mission_statement">
+          <h2> Mission Statement </h2>
+          <p> Our mission is to help ameliorate student loan debt in America by connecting indebted college students with potential donors through an online network that helps them develop mutually beneficial relationships. </p>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div id="values">
+          <h2> Values </h2>
+          <dl class="dl-horizontal">
+            <dt>Transparency</dt>
+            <dd>Absolute disclosure of information between our company, students and donors.</dd>
+            <dt>Choice (Ownership)</dt>
+            <dd>Donors have the choice to fund any student based on any criteria they want and students are encouraged to take full ownership of their donation and networking experience on our site.</dd>
+            <dt>Students first</dt>
+            <dd>The primary purpose of our organization is to help students be relieved of excessive financial burden.  Therefore, everything we do (or don’t do) is considered with the student’s best interest in mind.</dd>
+            <dt>Integrity</dt>
+            <dd>All actions taken, or allowed, by our company will be carefully considered upon a foundation of ethical principles.</dd>
+            <dt>Equal Opportunity</dt>
+            <dd>Our company does not discriminate on any person’s race, gender, sexuality, religion, etc.  Our company’s purpose is to create equality of opportunity among college students.</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div id="team">
+          <h2> Team </h2>
+          <dl class="dl-horizontal">
+            <dt>Quip Turner</dt>
+            <dd>Quip is a senior Industrial and Labor Relations student at Cornell University from Dallas, TX. Through his professional experience, he developed a strong interest in social entrepreneurship and has long-term aspirations in philanthropic endeavors.  Quip is has held leadership positions in The Social Business Consulting Group, Phi Sigma Pi National Honors Fraternity, and Big Red Consulting.  Quip will work as a high school mathematics teacher in Tulsa, Oklahoma through Teach for America after he graduates in May 2012</dd>
+            <dt>Sohan Jain</dt>
+            <dd> Sohan Jain recently earned his B.S. in Computer Science from Cornell University. During his undergraduate career, Sohan gained software engineering experience through internships at Hulu in Los Angeles and Facebook in Palo Alto. He also organized the event 3 Day Startup Cornell, which brought together the top entrepreneurs on campus, serial entrepreneurs, venture capitalists, and mentors from industry to remove all barriers to starting tech companies. Now, Sohan works for the startup Moat, a brand analytics and intelligence company</dt>           
+            <dt>Sara Cullen</dt>
+            <dd> Sara Cullen is a senior at Cornell University studying International Development Economics with a concentration in Near Eastern Studies. Through her experiences working for the United Nations, U.S. Senate, and non-profits, Sara learned that the best way to accelerate economic growth and deliver pragmatic solutions is to tackle problems from an enterprising and innovative perspective. On campus, Sara has held leadership positions in the Cornell Women’s Polo Team, The Social Business Consulting Group, and Delta Gamma Sorority.  After graduating in May 2012, Sara plans to work for Venture for America and continue her passion for social entrepreneurship</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div id="vision">
+          <h2> Vision </h2>
+          <p> We aim to eliminate $20,000 of student loan debt through donations by the year 2014. </p>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+  <script type="text/javascript">
+    $('body').attr('data-spy', 'scroll');
+    $('#navbar').scrollspy();
+    $('#container').removeClass('container');
+    $('#container').addClass('container-fluid');
+  </script>
+{% endblock %}

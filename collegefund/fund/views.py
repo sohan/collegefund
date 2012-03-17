@@ -21,3 +21,10 @@ def index(request):
         'index.html',
         data,
         context_instance=RequestContext(request))
+
+def about(request):
+    data = {}
+    return render_to_response(
+        'about_us.html',
+        data,
+        context_instance=RequestContext(request))
