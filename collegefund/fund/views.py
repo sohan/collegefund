@@ -28,3 +28,31 @@ def about(request):
         'about_us.html',
         data,
         context_instance=RequestContext(request))
+
+def students(request):
+    data = {}
+    return render_to_response(
+        'students.html',
+        data,
+        context_instance=RequestContext(request))
+
+def donors(request):
+    data = {}
+    return render_to_response(
+        'donors.html',
+        data,
+        context_instance=RequestContext(request))
+
+def facts(request):
+    data = {}
+    return render_to_response(
+        'facts.html',
+        data,
+        context_instance=RequestContext(request))
+
+def faq(request):
+    data = {}
+    return render_to_response(
+        'faq.html',
+        data,
+        context_instance=RequestContext(request))

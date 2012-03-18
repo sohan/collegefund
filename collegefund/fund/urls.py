@@ -15,5 +15,9 @@ urlpatterns = patterns('fund.views',
     # Uncomment the next line to enable the admin:
     url(r'admin/', include(admin.site.urls)),
     url(r'about$', 'about'),
+    url(r'students$', 'students'),
+    url(r'donors$', 'donors'),
+    url(r'facts$', 'facts'),
+    url(r'faq$', 'faq'),
     url(r'$', 'index'),
 )

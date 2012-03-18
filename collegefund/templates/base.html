@@ -1,6 +1,6 @@
 <html lang="en">
   <head>
-    <title> College Fund | {% block title %}{% endblock %} </title>
+    <title> ConnectForEdu | {% block title %}{% endblock %} </title>
     <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}css/fund.css" rel="stylesheet">
@@ -19,10 +19,18 @@
           <a class="brand" href="#">College Fund</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Give</a></li>
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="/students">Students</a></li>
+              <li class="dropdown" id="donors_dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#donors_dropdown">Donors<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/donors#alumni">Alumni</a></li>
+                  <li><a href="/donors#organizations">Organizations</a></li>
+                </ul>
+              </li>
+              <li><a href="/facts">Loan Debt Facts</a></li>
+              <li><a href="/faq">Frequently Asked Questions</a></li>
               <li><a href="/about">About Us</a></li>
-              <li><a href="#">Student Loan Debt</a></li>
             </ul>
             <ul class="nav pull-right" action="" id="nav_login">
               <li id="login"><a href="/auth/login/">Login</a></li>
@@ -53,8 +61,11 @@
     </div><!--/container-->
 
     <!-- Javascript at the end so docs load faster -->
-    <script src="{{ STATIC_URL }}js/jquery.min.js"></script>
-    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.min.js"></script>
+    <script type-"text/javascript" src="{{ STATIC_URL }}bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript">
+      $('.dropdown-toggle').dropdown();
+    </script>
     {% block js %}{% endblock %}
   </body>
 </html>
