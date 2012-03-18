@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}ConnectForEdu | About Us{% endblock %}
+
+{% block body %}
+  <div class="row-fluid">
+    <div id="sidebar" class="span2 sidebar-nav sidebar-nav-fixed">
+      <ul class="nav nav-list">
+        <li class="nav-header">Students</li>
+        <li class="active"><a href="#whatwedo">What We Can Do</a></li>
+        <li><a href="#screening">Who We Can Help</a></li>
+        <li><a href="#application">Application Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="span9 span-fixed-sidebar">
+      <div class="row-fluid">
+        <div id="whatwedo">
+          <h2> What ConnectForEdu does </h2>
+          <p>
+            ConnectForEdu ameliorates student loan debt for ambitious, driven students. 
+            We'll connect you with potential donors, comprising mostly alumni, organizations, and corporations, through a network of profiles. 
+            You'll attract traffic to your custom profiles via a blogging platform or other means, and then corporations will sponsor your page with advertisements at charitable rates. 
+            In addition to direct donations, a portion of the advertising revenue that you help generate goes directly toward paying off your loan debt.
+          </p>
+          <!--img class="text-center center" src="/static/img/how_connectforedu_works.png" alt="How ConnectForEdu Works" width="600" height="300"/-->
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div id="screening">
+          <h2> Who we can help </h2>
+          <p>
+          We're just starting to experiment with ConnectForEdu, so we're looking for a first batch of eager, talented, and passionate students to bring on board. 
+          We'll screen applicants on certain criteria, such as financial aid eligibility, amount of student loan debt, past achievements, academic performance, and current extracurricular involvement. 
+          </p>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div id="application">
+          <h2> Application Process </h2>
+          <p> 
+          Since we're just starting out the program, there is no formal application process yet. Shoot us an email about yourself and we'll set up some time for a skype or phone conversation to see if you're a good fit for ConnectForEdu and if ConnectForEdu is a good fit for you.
+          </p>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div id="contact">
+          <h2> Contact </h2>
+          <p>
+          Send an email to contact@connectforedu.com with your name, university, resume, and a few words about yourself. We'll get back to you as soon as possible! 
+          </p>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+  <script type="text/javascript">
+    $('body').attr('data-spy', 'scroll');
+    $('#sidebar').scrollspy();
+    $('#container').removeClass('container');
+    $('#container').addClass('container-fluid');
+  </script>
+{% endblock %}
