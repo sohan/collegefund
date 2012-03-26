@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}ConnectForEdu | Donors{% endblock %}
+
+{% block body %}
+  <div class="row-fluid">
+    <div id="sidebar" class="span2 sidebar-nav sidebar-nav-fixed">
+      <ul class="nav nav-list">
+        <li class="nav-header">Potential Donors</li>
+        <li class="active"><a href="#you_can_help">Student Loan Debt</a></li>
+        <li class=""><a href="#organizations">Organizations</a></li>
+        <li><a href="#alumni">Alumni and Individual Donors</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="span9 span-fixed-sidebar">
+      <div class="row-fluid">
+        <div id="you_can_help">
+          <h2> Student loan debt is a problem that you can help solve. </h2>
+          <p> 
+            For students seeking a college education in America, it has become increasingly difficult to pursue a degree without amassing a large student loan debt. 
+            The average student in America graduates with between $25,000-$30,000 in student loans, and the total student loan debt in America has doubled just in the past five years, nearing $1 trillion. 
+            The staggering amount of loan debt that these college students graduate with becomes a tremendous barrier for students from low-income backgrounds, often forcing them to forgo their career aspirations. 
+          </p>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div id="organizations">
+          <h2> Organizations </h2>
+            <h4> Rent advertising space on our site or a student's page </h4>
+            <p> 
+              Sponsor a specific student's profile or rent advertising space on our site.
+              Our site attracts other university students, faculty members, and other businesses, so your charitable action is publicized to others!
+              A percentage of your advertising dollars goes towards the students' loans, and students are encouraged to attract traffic to their pages.
+            </p>
+            <p>
+                Please email contact@connectforedu.com for details.
+            </p>
+            <h4> Donate directly to a student </h4>
+            <p>
+              We also facilitate direct donations to students. Please email contact@connectforedu.com for details of the process.
+            </p>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div id="alumni">
+          <h2> Alumni </h2>
+          <p>
+            Support a student who has loan debt from your alma mater. 
+            If you find the profile of a student whom you'd like to sponsor, we will facilitate your donation to him/her.
+            Please email contact@connectforedu.com for details.
+          </p>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div id="contact">
+          <h2> Contact </h2>
+          <p>
+          Please reach us at contact@connectforedu.com.
+          </p>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+  <script type="text/javascript">
+    $('body').attr('data-spy', 'scroll');
+    $('#sidebar').scrollspy();
+    $('#container').removeClass('container');
+    $('#container').addClass('container-fluid');
+  </script>
+{% endblock %}
