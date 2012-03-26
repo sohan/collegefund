@@ -3,11 +3,11 @@
 {% block title %}ConnectForEdu | Students {% endblock %}
 
 {% block body %}
-  <div class="row-fluid">
-    <div id="sidebar" class="span2 sidebar-nav sidebar-nav-fixed">
+  <div class="row-fluid" id="dataspy">
+    <div id="sidenavbar" class="span2 sidebar-nav sidebar-nav-fixed">
       <ul class="nav nav-list">
         <li class="nav-header">Students</li>
-        <li class="active"><a href="#whatwedo">What We Can Do</a></li>
+        <li class=""><a href="#whatwedo">What We Can Do</a></li>
         <li><a href="#screening">Who We Can Help</a></li>
         <li><a href="#application">Application Process</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -52,12 +52,12 @@
         </div>
       </div>
     </div>
+  </div>
 {% endblock %}
 
 {% block js %}
   <script type="text/javascript">
-    $('body').attr('data-spy', 'scroll');
-    $('#sidebar').scrollspy();
+    //$('#sidenavbar').scrollspy();
     $('#container').removeClass('container');
     $('#container').addClass('container-fluid');
   </script>

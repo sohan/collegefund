@@ -3,11 +3,11 @@
 {% block title %}ConnectForEdu | About Us{% endblock %}
 
 {% block body %}
-  <div class="row-fluid">
-    <div id="navbar" class="span2 sidebar-nav sidebar-nav-fixed">
+  <div class="row-fluid" id="dataspy" data-toggle="scroll">
+    <div id="sidenavbar" class="span2 sidebar-nav sidebar-nav-fixed">
       <ul class="nav nav-list">
         <li class="nav-header">About Us</li>
-        <li class="active"><a href="#mission_statement">Mission Statement</a></li>
+        <li class=""><a href="#mission_statement">Mission Statement</a></li>
         <li><a href="#values">Values</a></li>
         <li><a href="#team">Team</a></li>
         <li><a href="#vision">Vision</a></li>
@@ -57,12 +57,12 @@
         </div>
       </div>
     </div>
+  </div>
 {% endblock %}
 
 {% block js %}
   <script type="text/javascript">
-    $('body').attr('data-spy', 'scroll');
-    $('#navbar').scrollspy();
+    //$('#sidenavbar').scrollspy();
     $('#container').removeClass('container');
     $('#container').addClass('container-fluid');
   </script>

@@ -19,5 +19,6 @@ urlpatterns = patterns('fund.views',
     url(r'donors$', 'donors'),
     url(r'facts$', 'facts'),
     url(r'faq$', 'faq'),
+    url(r'privacy$', 'privacy_policy'),
     url(r'$', 'index'),
 )

@@ -56,3 +56,10 @@ def faq(request):
         'faq.html',
         data,
         context_instance=RequestContext(request))
+
+def privacy_policy(request):
+    data = {}
+    return render_to_response(
+        'privacy.html',
+        data,
+        context_instance=RequestContext(request))
